@@ -1,4 +1,4 @@
-
+<?php include("includes/db.php"); ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,31 +7,31 @@
         <title>
         </title>
         <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
-        <style>
-            /* App custom styles */
-        </style>
         <script src="js/jquery-1.8.2.min.js">
         </script>
         <script src="js/jquery.mobile-1.2.0.min.js">
         </script>
-        <script src="js/m-y.js">
+        <script src="js/my.js">
         </script>
+        <?php include("includes/functions.php"); ?>
     </head>
     <body>
         <!-- Home -->
         <div data-role="page" id="page1">
             <div data-theme="a" data-role="header">
-                <h3>
-                    My App
-                </h3>
+                <h1>Home</h1>
             </div>
-            <div data-role="content">
-                
-                <div class="ui-grid-b">
-                    <div class="ui-block-a"></div>
-                    <div class="ui-block-b"><a href="signin.php" data-rel="dialog">Sign in</a></div>
-                    <div class="ui-block-c"></div>
-                </div>
+            <div data-role="content">                
+                <?php
+                    $email = $_POST['email'];
+                    $pass = $_POST['password'];
+//                    if(login($email, $pass))
+//                      echo "Logged in";
+//                    else{
+//                        echo "The email and password you entered is not correct.";
+//                        echo "<a href='signin.php' data-rel='dialog'>Sign in</a>";
+//                    }
+                ?>
             </div>
         </div>
         <script>
