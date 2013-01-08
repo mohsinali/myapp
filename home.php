@@ -1,4 +1,3 @@
-<?php include("includes/db.php"); ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,8 +11,7 @@
         <script src="js/jquery.mobile-1.2.0.min.js">
         </script>
         <script src="js/my.js">
-        </script>
-        <?php include("includes/functions.php"); ?>
+        </script>        
     </head>
     <body>
         <!-- Home -->
@@ -22,20 +20,13 @@
                 <h1>Home</h1>
             </div>
             <div data-role="content">                
-                <?php
-                    $email = $_POST['email'];
-                    $pass = $_POST['password'];
-//                    if(login($email, $pass))
-//                      echo "Logged in";
-//                    else{
-//                        echo "The email and password you entered is not correct.";
-//                        echo "<a href='signin.php' data-rel='dialog'>Sign in</a>";
-//                    }
-                ?>
+                
+                <a href="" onclick="window.location.replace('index.php');" data-role="button">Logout</a>
             </div>
         </div>
         <script>
-            //App custom javascript
+            //App custom javascript            
+//            window.location = "index.php";
         </script>
     </body>
 </html>

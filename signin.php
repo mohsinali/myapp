@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,10 +20,10 @@
                 <h1>Sign In</h1>
             </div>
             <div data-role="content">
-                <form name="signin" method="post" action="response.php">
-                    Email <input type="text" name="username" />
+                <form name="signin" method="post" action="index.php">
+                    Email <input type="text" name="email" />
                     Password <input type="password" name="password" />
-                    <button>Submit</button>
+                    <button>Sign In</button>
                 </form>
             </div>
         </div>
