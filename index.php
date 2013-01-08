@@ -91,7 +91,7 @@
 		<form name="signin" method="post" action="index.php">
                     Email <input type="text" name="email" />
                     Password <input type="password" name="password" />
-                    <button>Sign In</button>
+                    <input type="submit" id="signin" name="btn_signin" value="Signin" />
                 </form>
 		<p><a href="#one" data-direction="reverse" data-role="button" data-theme="b">Cancel</a></p>	
 		
@@ -104,21 +104,19 @@
  
  
 <!-- Start of third page: #popup --> 
-<div data-role="dialog" id="popup"> 
+<div data-role="dialog" id="popup" data-theme="b"> 
  
 	<div data-role="header" data-theme="b"> 
 		<h1>Dialog</h1> 
 	</div><!-- /header --> 
  
-	<div data-role="content" data-theme="b">	
+	<div data-role="content" data-theme="d">	
 		<h2>Popup</h2> 
 		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>		
 		<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back to page "one"</a></p>	
 	</div><!-- /content --> 
 	
-	<div data-role="footer"> 
-		<h4>Page Footer</h4> 
-	</div><!-- /footer --> 
+	
 </div><!-- /page popup -->
         
         
