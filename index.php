@@ -25,20 +25,15 @@
 <div data-role="page" id="one"> 
  
 	<div data-role="header" data-theme="b" data-position="fixed"> 
-		<h1>Multi-page</h1> 
+            <a href="home.php" data-role="button">Home</a>
+            <h1>Splash</h1>
 	</div><!-- /header --> 
  
 	<div data-role="content" >                
 		<h2>Welcome to My App</h2> 
                 <?php include("includes/login.php"); print_r($_SESSION); ?>
 		<p>I have an <code>id</code> of "one" on my page container. I'm first in the source order so I'm shown when the page loads.</p>	
-				
-                <?php
-                // Sign Up
-                if (isset($_POST['country'])):
 
-                endif;
-                ?>
                 <p><a href="#signin" data-role="button">Sign In</a></p>	
 		<p><a href="#popup" data-role="button" data-rel="dialog" data-transition="pop">Sign Up</a></p> 
 	</div><!-- /content --> 

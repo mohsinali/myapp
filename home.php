@@ -13,26 +13,36 @@
         </script>
         <script src="js/my.js">
         </script>
+        <style>
+            h3 a {text-decoration: none; color:#000;}
+        </style>
+        <style>
+            .content {font-size: 12px;}
+            p.summary {font-family:Arial; font-size:14px; font-weight:bold; color:#000;}
+            h3 {margin-bottom: 0px;}
+        </style>
     </head>
     <body>
         <!-- Home -->
         <div data-role="page" id="page1">
-            <div data-theme="b" data-role="header">
+            <div data-theme="b" data-role="header" data-position="fixed">
                 <a href="" onclick="window.location.replace('index.php?action=logout');" data-role="button">Logout</a>
-                <h1>My App</h1>
+                <h1>News</h1>
             </div>
             <div data-role="content">                
-                Welcome <span id="email"></span>!!!                
+                
+                <?php for($i=1; $i<=10; $i++): ?>
+                <div data-role="collapsible" data-mini="true">
+                    <h3>Tahir-ul-Qadri preparing for 14th Jan.</h3>
+                    <p>
+                        Here is the description text.
+                        <a href="news_detail.php" data-rel="external">more>></a>
+                    </p>
+                </div>
+                <?php endfor; ?>
+                
             </div>
-            
-            <div data-role="footer" data-position="fixed" data-theme="d">
-                <div data-role="navbar">
-                    <ul>
-                        <li><a href="a.html" data-role="button" data-icon="star">Election News</a></li>
-                        <li><a href="b.html" data-role="button" data-icon="star">Electipedia</a></li>
-                    </ul>
-                </div><!-- /navbar -->
-            </div>
+            <?php include("includes/footer.php"); ?>
                 
         </div>
         <script>
